@@ -22,7 +22,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
       backgroundColor: AppColors.whiteColor,
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.only(left: 30,right: 30,top: 60,bottom: 40),
+          padding: const EdgeInsets.only(left: 30,right: 30,top: 60),
           child: SizedBox(
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height,

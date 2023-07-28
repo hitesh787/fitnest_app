@@ -11,6 +11,24 @@ class AppColors {
   static const Color checkColor =  Color(0xff92A3FD);
 
 
+  static LinearGradient buttonCalendarColor = const LinearGradient(
+    begin: Alignment(-1.00, 0.08),
+    end: Alignment(1, -0.08),
+    colors: [
+      Color(0xffF7F8F8),
+      Color(0xffF7F8F8),
+    ],
+  );
+
+  static LinearGradient buttonWhiteColor = const LinearGradient(
+    begin: Alignment(-1.00, 0.08),
+    end: Alignment(1, -0.08),
+    colors: [
+      Color(0xffFFFFFF),
+      Color(0xffFFFFFF),
+    ],
+  );
+
   static LinearGradient buttonBlueColor = const LinearGradient(
     begin: Alignment(-1.00, 0.08),
     end: Alignment(1, -0.08),
@@ -19,7 +37,6 @@ class AppColors {
       Color(0xff92A3FD),
     ],
   );
-
   static LinearGradient buttonPurpleColor = const LinearGradient(
     begin: Alignment(-1.00, 0.08),
     end: Alignment(1, -0.08),
@@ -54,4 +71,17 @@ class AppColors {
   static const Color contentColorCyan = Color(0xFF50E4FF);
 
 
+}
+
+
+class HexColor extends Color {
+  static int _getColorFromHex(String hexColor) {
+    hexColor = hexColor.toUpperCase().replaceAll("#", "");
+    if (hexColor.length == 6) {
+      hexColor = "FF$hexColor";
+    }
+    return int.parse(hexColor, radix: 16);
+  }
+
+  HexColor(final String hexColor) : super(_getColorFromHex(hexColor));
 }

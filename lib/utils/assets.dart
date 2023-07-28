@@ -39,5 +39,7 @@ class AppAssets{
   static const String iconWorkout = "${_baseUrl}Icon-Workout.png";
   static const String iconNotif = "${_baseUrl}Icon-Notif.png";
   static const String congratulationsIcons = "${_baseUrl}CongratulationsIcons.png";
+  static const String vector3 = "${_baseUrl}Vector (3).png";
+  static const String food = "${_baseUrl}food.png";
 
 }
