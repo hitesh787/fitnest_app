@@ -123,7 +123,7 @@ class _MealScheduleState extends State<MealSchedule> {
           children: <Widget>[
             titleView(),
             hrizontalCapsuleListView(),
-            const SizedBox(height: 30,),
+            const SizedBox(height: 40,),
             Padding(
               padding: const EdgeInsets.only(bottom: 15,left: 30,right: 30),
               child: Row(
