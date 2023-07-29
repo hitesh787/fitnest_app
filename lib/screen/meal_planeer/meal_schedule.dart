@@ -26,8 +26,7 @@ class _MealScheduleState extends State<MealSchedule> {
     currentMonthList = date_util.DateUtils.daysInMonth(currentDateTime);
     currentMonthList.sort((a, b) => a.day.compareTo(b.day));
     currentMonthList = currentMonthList.toSet().toList();
-    scrollController =
-        ScrollController(initialScrollOffset: 70.0 * currentDateTime.day);
+    scrollController = ScrollController(initialScrollOffset: 70.0 * currentDateTime.day);
     super.initState();
   }
 
