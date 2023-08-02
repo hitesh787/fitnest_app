@@ -33,13 +33,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 const SizedBox(height: 5,),
                 const Text("Create an Account",style: TextStyle(letterSpacing: 0.5,fontWeight: FontWeight.w700,fontSize: 20),textAlign: TextAlign.center,),
                 const SizedBox(height: 30),
-                const CustomTextFieldsWidget(hintTitle: "First Name",icons: AppAssets.profile),
+                 CustomTextFieldsWidget(hintTitle: "First Name",icons: AppAssets.profile,onChange: (value){},validator: (val){}),
                 const SizedBox(height: 15),
-                const CustomTextFieldsWidget(hintTitle: "Last Name",icons: AppAssets.profile, ),
+                 CustomTextFieldsWidget(hintTitle: "Last Name",icons: AppAssets.profile,onChange: (value){},validator: (val){}),
                 const SizedBox(height: 15),
-                const CustomTextFieldsWidget(hintTitle: "Email",icons: AppAssets.message),
+                 CustomTextFieldsWidget(hintTitle: "Email",icons: AppAssets.message,onChange: (value){},validator: (val){}),
                 const SizedBox(height: 15),
-                CustomTextFieldsWidget(hintTitle: "Password",icons: AppAssets.lock,suffixIcons: Image.asset(AppAssets.hide,height: 18,width: 18)),
+                CustomTextFieldsWidget(hintTitle: "Password",icons: AppAssets.lock,suffixIcons: Image.asset(AppAssets.hide,height: 18,width: 18),onChange: (value){},validator: (val){}),
                 const SizedBox(height: 10),
                 Row(
                   children: [

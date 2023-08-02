@@ -28,11 +28,11 @@ class SignUpPages2 extends StatelessWidget {
              child: Column(
                children: [
                  const SizedBox(height: 15),
-                 const CustomTextFieldsWidget(hintTitle: "Date of Birth",icons: AppAssets.calendar),
+                  CustomTextFieldsWidget(hintTitle: "Date of Birth",icons: AppAssets.calendar,onChange: (value){},validator: (val){}),
                  const SizedBox(height: 15),
                  Row(
                    children: [
-                     const Flexible(child: CustomTextFieldsWidget(hintTitle: "Your Weight",icons: AppAssets.weightScale1)),
+                      Flexible(child: CustomTextFieldsWidget(hintTitle: "Your Weight",icons: AppAssets.weightScale1,onChange: (value){},validator: (val){})),
                      const SizedBox(width: 15),
                      kgButton("KG"),
                    ],
@@ -40,7 +40,7 @@ class SignUpPages2 extends StatelessWidget {
                  const SizedBox(height: 15),
                  Row(
                    children: [
-                     const Flexible(child: CustomTextFieldsWidget(hintTitle: "Your Height",icons: AppAssets.swap)),
+                     Flexible(child: CustomTextFieldsWidget(hintTitle: "Your Height",icons: AppAssets.swap,onChange: (value){},validator: (val){})),
                      const SizedBox(width: 15),
                      kgButton("CM"),
                    ],
